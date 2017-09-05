@@ -1,160 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Welcome to My Site</title>
+  <title>Welcome to My Site</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#it">IT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Intro Header -->
+  <header class="masthead">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="brand-heading">Welcome</h1>
+            <p class="intro-text">I created this website to give a bit of an insight of what I have been doing</p>
+            <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="content-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About Me</h2>
+          <p>My name is Mátyás Fehér, 23-year-old from Budapest, Hungary</p>
+          <p>I am on the 5th Semester on Computer Science at the <a href="https://www.cphbusiness.dk/">Copenhagen Business Academy</a></p>
+          <p>Currently doing my internship at L&M Solutions Ltd.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT Section -->
+  <section id="it" class="it-section content-section text-center">
+    <div class="container">
+      <div class="col-lg-8 mx-auto">
+        <h2>IT</h2>
+        <p>Fluency in Java: concurrency, socket-level, JSP, Servlets, Swing, JUnit<br> Basic knowledge of Python<br> Databases:
+          SQL and MySQL, JDBC, MSSQL<br> ORM with Java Persistence<br> NoSQL with MongoDB and Mongoose<br> Servers: Tomcat,
+          Glassfish, Express<br> Agile methodologies: Scrum, Extreme Programming<br>
+          <br> I have a good understanding with the following editors/tools: NetBeans, Visual Studio, Visual Studio Code,
+          PhyCharm, Git</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IT Section -->
+  <section id="project" class="project-section content-section text-center">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row">
+
+        <div class="col-lg-6">
+          <h3><a href="https://matyasfeher.com/Charter">Charter App</a></h3>
+          <p>It is a simple Web Application that handles information about Croatian Charter companies</p>
+          <p>The app has a 3 layer architecture that uses a MySQL databes, JPA for mapping, a REST-Api and HTML, CSS, Angular frontend</p>
+          <p>It has the functionalites of getting all the information about the companies from the database,<br>
+            Adding new Charter companies and search between them</p>
+        </div>
+        <div class="col-lg-6">
+          <h3><a href="https://matyasfeher.com/Calculator">Calculator</a></h3>
+          <p>During an application, I was asked to provide a simple solution that counts the change with the least amount of bills/coins possible in Hungarian Forint</p>
+          <p>The app has been built only using HTML, CSS and JavaScript</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="content-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Contact Me</h2>
+          <p>Feel free to contact me on any of these social media platforms</p>
+          <ul class="list-inline banner-social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/matyasfeher" class="btn btn-default btn-lg">
+                  <i class="fa fa-facebook fa-fw"></i>
+                  <span class="network-name">Facebook</span>
+                </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#it">IT</a>
+            <li class="list-inline-item">
+              <a href="https://github.com/matyasfeher" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/matyas_feher/" class="btn btn-default btn-lg">
+                  <i class="fa fa-instagram fa-fw"></i>
+                  <span class="network-name">Instagram</span>
+                </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <!-- Intro Header -->
-    <header class="masthead">
-      <div class="intro-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">Welcome</h1>
-              <p class="intro-text">I created this website to give a bit of an insight of what I have been doing</p>
-              <a href="#about" class="btn btn-circle js-scroll-trigger">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+  <!-- Map Section -->
+  <div id="map"></div>
 
-    <!-- About Section -->
-    <section id="about" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About Me</h2>
-            <p>My name is Mátyás Fehér, 23-year-old Hungarian from Budapest</p>
-            <p>I am on the 5th Semester on Computer Science at the <a href="https://www.cphbusiness.dk/">Copenhagen Business Academy</a></p>
-            <p>Currently doing my internship at L&M Solutions Ltd.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>Copyright &copy; Your Website 2017</p>
+    </div>
+  </footer>
 
-    <!-- IT Section -->
-    <section id="it" class="it-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>IT</h2>
-          <p>Fluency in Java: concurrency, socket-level, JSP, Servlets, Swing, JUnit<br>
-            Basic knowledge of Python<br>
-            Databases: SQL and MySQL, JDBC, MSSQL<br>
-            ORM with Java Persistence<br>
-            NoSQL with MongoDB and Mongoose<br>
-            Servers: Tomcat, Glassfish, Express<br>
-            Agile methodologies: Scrum, Extreme Programming<br>
-            <br>
-            I have a good understanding with the following editors/tools:
-            NetBeans, Visual Studio, Visual Studio Code, PhyCharm, Git</p>
-        </div>
-      </div>
-    </section>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact Me</h2>
-            <p>Feel free to contact me on any of these social media platforms</p>
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/matyasfeher" class="btn btn-default btn-lg">
-                  <i class="fa fa-facebook fa-fw"></i>
-                  <span class="network-name">Facebook</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/matyasfeher" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.instagram.com/matyas_feher/" class="btn btn-default btn-lg">
-                  <i class="fa fa-instagram fa-fw"></i>
-                  <span class="network-name">Instagram</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Map Section -->
-    <div id="map"></div>
+  <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA"></script>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        <p>Copyright &copy; Your Website 2017</p>
-      </div>
-    </footer>
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
-
-  </body>
+</body>
 
 </html>
