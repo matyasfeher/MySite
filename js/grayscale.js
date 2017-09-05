@@ -39,10 +39,26 @@
 
 // Google Maps Scripts
 var map = null;
+var yourLat = 47.49801;
+var yourLong = 19.03991;
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(success, error);
+} else {
+  alert('geolocation not supported');
+}
+function error(msg) {
+  alert('error: ' + msg);
+}
+function success(position) {
+  yourLat = position.coords.latitude;
+  yourLong = position.coords.longitude;
+  console.log(yourLat, yourLong);
+}
+
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-  map.setCenter(new google.maps.LatLng(47.49801, 19.03991));
+  map.setCenter(new google.maps.LatLng(yourLat, yourLong));
 });
 
 function init() {
@@ -53,12 +69,12 @@ function init() {
     zoom: 13,
 
     // The latitude and longitude to center the map (always required)
-    center: new google.maps.LatLng(47.49801, 19.03991), // Budapest
+    center: new google.maps.LatLng(yourLat, yourLong), // Budapest
 
     // Disables the default Google Maps UI components
     disableDefaultUI: true,
-    scrollwheel: false,
-    draggable: false,
+    scrollwheel: true,
+    draggable: true,
 
     // How you would like to style the map.
     // This is where you would paste any style found on Snazzy Maps.
@@ -181,7 +197,7 @@ function init() {
 
   // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
   var image = 'img/map-marker.svg';
-  var myLatLng = new google.maps.LatLng(47.49801, 19.03991);
+  var myLatLng = new google.maps.LatLng(yourLat, yourLong);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,
