@@ -47,7 +47,7 @@ if (navigator.geolocation) {
   alert('geolocation not supported');
 }
 function error(msg) {
-  alert('error: ' + msg);
+  console.log('error: '+ msg);
 }
 function success(position) {
   yourLat = position.coords.latitude;
@@ -203,4 +203,5 @@ function init() {
     map: map,
     icon: image
   });
+  console.log(beachMarker.position);
 }
